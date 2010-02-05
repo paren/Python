@@ -34,7 +34,7 @@ ejemplo: 1-9999
 identidad = Who()
 identidad
 identidad.identificar(identidad.user, identidad.localhost)
-identidad.sistema(identidad.sistema_operativo)
+identidad.sistema(identidad.sistema_operativo, False)
 
 #Clase con herramientas a usar
 conexion = Matrix()
