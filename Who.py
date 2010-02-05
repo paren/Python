@@ -31,8 +31,7 @@ class Who:
              print 'User: ' + user
              print 'Host: ' + local_host
 
-    #Metodo para detectar el OS, en caso de windows se detiene.
-    #No hay soporte. 
+    #Metodo para detectar el OS, en caso de no encontrar alguno valido imprime el que encontro
 
     def sistema(self, SistemaOperativo):
         if SistemaOperativo == 'nt':
