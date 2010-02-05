@@ -33,15 +33,18 @@ class Who:
 
     #Metodo para detectar el OS, en caso de no encontrar alguno valido imprime el que encontro
 
-    def sistema(self, SistemaOperativo):
-        if SistemaOperativo == 'nt':
-            print 'Sistema Windows'
-        elif SistemaOperativo == 'posix':
-            print 'Linux o variante Unix'
-        elif SistemaOperativo == 'mac':
-            print 'Mac'
+    def sistema(self, SistemaOperativo, quietMode):
+        if quietMode:
+            return SistemaOperativo
         else:
-            print SistemaOperativo
+            if SistemaOperativo == 'nt':
+                print 'Sistema Windows'
+            elif SistemaOperativo == 'posix':
+                print 'Linux o variante Unix'
+            elif SistemaOperativo == 'mac':
+                print 'Mac'
+            else:
+                print SistemaOperativo
         
 
 
