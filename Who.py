@@ -37,15 +37,12 @@ class Who:
     def sistema(self, SistemaOperativo):
         if SistemaOperativo == 'nt':
             print 'Sistema Windows'
-            print 'Sistema Operativo no soportado!'
-            print ''
-            sys.exit(0)
         elif SistemaOperativo == 'posix':
             print 'Linux o variante Unix'
         elif SistemaOperativo == 'mac':
             print 'Mac'
         else:
-            print 'Sistema operativo no validado'
+            print SistemaOperativo
         
 
 
